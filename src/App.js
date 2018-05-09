@@ -20,7 +20,7 @@ class App extends React.Component {
   componentDidMount(){
     setTimeout(function() { //Start the timer
       this.setState({imageStatus: "loaded",  imgLoading:false, imgError: false, render: true}) //After 1 second, set render to true
-  }.bind(this), 1000)
+  }.bind(this), 5000)
   }
   render() {
      if(this.state.imgError){
@@ -33,6 +33,7 @@ class App extends React.Component {
             <div className="item item-2"></div>
             <div className="item item-3"></div>
             <div className="item item-4"></div>
+            <img src={env} alt="Envelop" className="display_none" />
           </div>
         )
 
