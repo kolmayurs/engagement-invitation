@@ -41,22 +41,24 @@ class App extends React.Component {
     else{
       return (
       <div className="main-container">
-        <div className="env">
-          <img src={env} alt="Envelop" onLoad={this.handleImageLoaded.bind(this)}
-          onError={this.handleImageErrored.bind(this)} />
-        </div>
-        <div className="half-env">
-          <img src={halfenv} alt="Envelop" onLoad={this.handleImageLoaded.bind(this)}
-          onError={this.handleImageErrored.bind(this)} />
-        </div>
-        <div className="invitation-box">
-          <div className="box-1">
-            <img src={rings} alt="Ring" onLoad={this.handleImageLoaded.bind(this)}
-          onError={this.handleImageErrored.bind(this)} />
+        <div className="env-container">
+          <div className="env">
+            <img src={env} alt="Envelop" onLoad={this.handleImageLoaded.bind(this)}
+            onError={this.handleImageErrored.bind(this)} />
           </div>
-          <div className="box-2">
-            <img src={rings} alt="Ring" onLoad={this.handleImageLoaded.bind(this)}
-          onError={this.handleImageErrored.bind(this)} />
+          <div className="half-env">
+            <img src={halfenv} alt="Envelop" onLoad={this.handleImageLoaded.bind(this)}
+            onError={this.handleImageErrored.bind(this)} />
+          </div>
+          <div className="invitation-box">
+            <div className="box-1">
+              <img src={rings} alt="Ring" onLoad={this.handleImageLoaded.bind(this)}
+            onError={this.handleImageErrored.bind(this)} />
+            </div>
+            <div className="box-2">
+              <img src={rings} alt="Ring" onLoad={this.handleImageLoaded.bind(this)}
+            onError={this.handleImageErrored.bind(this)} />
+            </div>
           </div>
         </div>
       </div>

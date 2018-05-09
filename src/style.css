@@ -86,6 +86,14 @@ body, #root{
 	margin:0px;
 	padding:0px;
 }
+.env-container{
+	width: 100%;
+max-width: 964px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
 .env{
 	width: 100%;
 	max-width: 620px;
@@ -93,10 +101,12 @@ body, #root{
 	margin: 0 auto;
 	padding-top: 50px;
 }
-
+.env img{
+	width: 100%;
+}
 .invitation-box{
-	width: 460px;
-	height: 670px;
+	width: 100%;
+	max-width: 460px;
 	display: block;
 	position: absolute;
 	margin-left: auto;
@@ -117,6 +127,17 @@ body, #root{
     animation-iteration-count: 1;
     overflow: hidden;
 }
+@media only screen and (max-width: 964px) {
+.invitation-box{
+	left: 0px;
+	-webkit-animation: mymoves 5s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation: mymove1 5s;
+    animation-iteration-count: 1;
+}
+
+}
+
 
 .box-1{
 	width: 100%;
@@ -126,8 +147,10 @@ body, #root{
 
 }
 .box-1 img{
-width: 300px;
-height: 197px;
+	width: 100%;
+
+max-width: 300px;
+
 
 }
 .box-2{
@@ -139,12 +162,14 @@ height: 197px;
 
 }
 .box-2 img{
-width: 300px;
-height: 197px;
+width: 100%;
+max-width: 300px;
+
 
 }
 .half-env{
-	    width: 605px;
+	width: 100%;
+	max-width: 605px;
     display: block;
     position: absolute;
     margin-left: auto;
@@ -153,6 +178,9 @@ height: 197px;
     right: 0;
     top: 345px;
     z-index: 2;
+}
+.half-env img{
+width: 100%;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -170,4 +198,21 @@ height: 197px;
     50%  {top: -10px; left: -500px; height: 350px;  z-index: 3;}
     75%  {top: 430px; left: -500px; height: 350px;  z-index: 3;}
     100% {top: 110px; left: -500px; height: 670px;  z-index: 3;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1 {
+    0%   {top: 300px; left: 0; height: 350px;  z-index: 1;}
+    25%  {top: 0px; left: 0; height: 350px;  z-index: 1;}
+    50%  {top: -10px; left: -0; height: 350px;  z-index: 3;}
+    75%  {top: 430px; left: -0; height: 350px;  z-index: 3;}
+    100% {top: 110px; left: -0; height: 670px;  z-index: 3;}
+}
+
+@keyframes mymove1 {
+     0%   {top: 300px; left: 0; height: 350px;  z-index: 1;}
+    25%  {top: 0px; left: 0; height: 350px;  z-index: 1;}
+    50%  {top: -10px; left: -0; height: 350px;  z-index: 3;}
+    75%  {top: 430px; left: -0; height: 350px;  z-index: 3;}
+    100% {top: 110px; left: -0; height: 670px;  z-index: 3;}
 }
