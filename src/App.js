@@ -20,7 +20,7 @@ class App extends React.Component {
   componentDidMount(){
     setTimeout(function() { //Start the timer
       this.setState({imageStatus: "loaded",  imgLoading:false, imgError: false, render: true}) //After 1 second, set render to true
-  }.bind(this), 5000)
+  }.bind(this), 1000)
   }
   render() {
      if(this.state.imgError){
